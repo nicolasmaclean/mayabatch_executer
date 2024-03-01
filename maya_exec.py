@@ -20,6 +20,13 @@ import os
 from subprocess import Popen
 from tempfile import NamedTemporaryFile
 
+# 3rd Party
+try:
+    import maya
+    IN_MAYA = True
+except ImportError:
+    IN_MAYA = False
+
 # Internal
 from app_exec import AppExecuter
 
